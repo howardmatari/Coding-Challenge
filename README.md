@@ -3,6 +3,9 @@ Coding Practice for Salesforce
 
 Challenge: 
 Create batchable apex that will delete stale Account records. Stale account records are Accounts with no related open opportunities for the last 6 months. 
+
+SOQL query used to get stale accounts according to criteria:  
+ ([SELECT Id FROM Account WHERE Id NOT IN (SELECT AccountId FROM Opportunity WHERE IsClosed = FALSE AND CloseDate > LAST_N_MONTHS:6)]);
  
 Create schedulable apex that will execute the batch class above. 
  
