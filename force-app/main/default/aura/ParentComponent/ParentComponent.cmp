@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:method name="greetingMethod" action="{!c.getMessage}" access="public">
+	<aura:attribute name="GreetingParam" type="String" default="Hello"/> 
+	<aura:attribute name="PersonNameParam" type="String" default="Matari"/> 
+</aura:method>
+<c:ChildComponent parent="{!this}">
+<!-- parent.cmp -->
+<!--<aura:handler name="sampleComponentEvent" event="c:compEvent"
+    action="{!c.callParentMethod}" ChildComponentEvent="{!c.handleChildEvent}" /> -->
+</c:ChildComponent> 
+
+   
+
+</aura:component>

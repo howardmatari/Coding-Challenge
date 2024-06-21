@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>Documentation</aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		Revature Training Salesforce Aura Challenge
+	</aura:example>
+</aura:documentation>
