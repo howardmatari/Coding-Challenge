@@ -1,0 +1,8 @@
+public class ContactLead {
+    public static List<List<SObject>> findContactsAndLeadsNamedTom() {
+        // Define the SOSL query to search for contacts and leads named 'Tom'
+        String soslQuery = 'FIND \'Tom\' IN NAME FIELDS RETURNING Contact(Name), Lead(Name)';
+        //Query run in query editor:  FIND {\'Tom\'} IN NAME FIELDS RETURNING Contact(Name), Lead(Name)
+        return Search.query(soslQuery);
+    }
+}
