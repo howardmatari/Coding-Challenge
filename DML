@@ -26,3 +26,13 @@ public class NewAccounts {
         insert acct;
     }
 }
+
+
+//Challenge III
+//Write a method called Relocate that deletes the 50 most recent Contacts in the database.
+public with sharing class  DeleteContacts {
+    public static void Relocate(){
+    Contact[] queriedContacts = [SELECT Id, FirstName FROM Contact LIMIT 50];
+    delete queriedContacts;
+    }
+}
