@@ -13,9 +13,7 @@ return function(item) {
 
 const addItem = createList();
 
-// Output: ['Mouse']
+
 console.log(addItem('Mouse'));  
-// Output: ['Mouse', 'LCD']
-console.log(addItem('LCD')); 
-// Output: ['Mouse', 'LCD', 'Disk']
-console.log(addItem('Disk')); 
+//console.log(addItem('LCD')); 
+
