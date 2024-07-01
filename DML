@@ -1,1 +1,28 @@
+//Challenge I
+//Write a method called SpawnContacts that creates and inserts 200 uniquely named Contacts into the database.
+public with sharing class NewContacts {
+    public static void spawnContacts(){
+        List<Contact> createdContacts = new List<Contact>();
+      
+        for(Integer i=1;i<=200;i++){
+            Contact con = new Contact(FirstName ='Paris',LastName ='Hilton',Email ='paris.hilton@gmail.m' + i );
+            createdContacts.add(con);
+        }
+        insert createdContacts;
+    }
+}
 
+
+//Challenge II
+//Write a method called CreateHomes that creates and inserts 3 uniquely named Accounts into the database.
+public class NewAccounts {
+    public static void createHomes(){
+        List<Account> acct = new List<Account>();
+      
+        for(Integer i=1;i<=3;i++){
+            Account a = new Account(Name ='Acme',Phone ='(415)555-1212' + i );
+            acct.add(a);
+        }
+        insert acct;
+    }
+}
